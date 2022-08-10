@@ -50,5 +50,18 @@ function myReverse(array)
     }
     return newArray;
 }
- var a=myReverse(a);
-console.log(a); 
+//  var a=myReverse(a);
+// console.log(a); 
+function unShift(array,value1,value2)
+{
+    newArray=[];   
+    for(i=0;i<=array.length-1;i++)
+    {
+        newArray[i+2]=array[i]
+    }
+    newArray[0]=value1;
+    newArray[1]=value2;
+    return newArray;
+}
+var a=unShift(a,21,8);
+console.log(a);
