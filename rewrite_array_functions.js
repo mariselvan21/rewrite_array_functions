@@ -52,7 +52,7 @@ function myReverse(array)
 }
 //  var a=myReverse(a);
 // console.log(a); 
-function unShift(array,value1,value2)
+function myUnShift(array,value1,value2)
 {
     newArray=[];   
     for(i=0;i<=array.length-1;i++)
@@ -63,5 +63,14 @@ function unShift(array,value1,value2)
     newArray[1]=value2;
     return newArray;
 }
-var a=unShift(a,21,8);
-console.log(a);
+// var a=myUnShift(a,21,8);
+// console.log(a);
+function myForEach(array)
+{
+    for(i=0;i<=array.length-1;i++)
+    {
+        // console.log(array[i]); 
+    }
+    
+}
+myForEach(a);
