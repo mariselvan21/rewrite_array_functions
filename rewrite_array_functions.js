@@ -26,6 +26,7 @@ function myPop(array)
 }
 // var a=myPop(a);
 // console.log(a);
+
 function myCopyWithIn(array,startvalue)
 {   
     newArray=[];
@@ -52,6 +53,7 @@ function myReverse(array)
 }
 //  var a=myReverse(a);
 // console.log(a); 
+
 function myUnShift(array,value1,value2)
 {
     newArray=[];   
@@ -65,12 +67,45 @@ function myUnShift(array,value1,value2)
 }
 // var a=myUnShift(a,21,8);
 // console.log(a);
+
 function myForEach(array)
 {
     for(i=0;i<=array.length-1;i++)
     {
         // console.log(array[i]); 
     }
-    
 }
 myForEach(a);
+
+function myIncludes(array,value,indexvalue)
+{
+    for(i=0;i<=array.length-1;i++)
+    {
+        if((array[i]==value)&&(i==indexvalue))
+        {
+            var b="true";
+            return b;
+        }
+    }
+    
+    var b="false";
+    return b;
+}
+// var c=myIncludes(a,90,3);
+// console.log(c);
+
+function myShift(array)
+{
+    newArray=[];
+    index=0;
+    for(i=1;i<=array.length-1;i++)
+    {
+        newArray[index]=array[i];
+        index++;
+    }
+    return newArray;
+}
+// var a=myShift(a);
+// console.log(a);
+
+
