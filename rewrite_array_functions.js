@@ -108,4 +108,50 @@ function myShift(array)
 // var a=myShift(a);
 // console.log(a);
 
+var b=[5,10,15,20,25];
+function myConcat(array1,array2)
+{
+    j=array1.length
+    for(i=0;i<=array2.length-1;i++)
+    {
+        array1[j]=array2[i];
+        j++;
+    }
+    return array1;
+}
+// var a=myConcat(a,b);
+// console.log(a);
+
+function mySlice1(array,indexValue)
+{
+    newArray=[];
+    j=0
+    for(i=indexValue;i<=array.length-1;i++)
+    {
+        newArray[j]=array[i];
+        j++;
+    }
+    return newArray;
+}
+// var a=mySlice1(a,2)
+// console.log(a);
+
+function mySlice2(array,indexValue1,indexValue2)
+{
+    newArray=[];
+    j=0
+    for(i=indexValue1;i<=indexValue2-1;i++)
+    {
+        newArray[j]=array[i];
+        j++;
+    }
+    return newArray;
+}
+ var a=mySlice2(a,1,4)
+console.log(a);
+
+
+
+
+
 
