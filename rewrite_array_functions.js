@@ -91,7 +91,7 @@ function myIncludes(array,value,indexvalue)
     var b="false";
     return b;
 }
-// var c=myIncludes(a,90,3);
+// var c=myIncludes(a,90,2);
 // console.log(c);
 
 function myShift(array)
@@ -111,13 +111,22 @@ function myShift(array)
 var b=[5,10,15,20,25];
 function myConcat(array1,array2)
 {
-    j=array1.length
+    newArray=[];
+    var j=0
+    for(i=0;i<=array1.length-1;i++)
+    {
+        newArray[j]=array1[i];
+       j++ 
+    }
+    var j=newArray.length;
     for(i=0;i<=array2.length-1;i++)
     {
-        array1[j]=array2[i];
-        j++;
+        newArray[j]=array2[i];
+        j++
+        
     }
-    return array1;
+
+    return newArray;
 }
 // var a=myConcat(a,b);
 // console.log(a);
@@ -147,8 +156,24 @@ function mySlice2(array,indexValue1,indexValue2)
     }
     return newArray;
 }
- var a=mySlice2(a,1,4)
-console.log(a);
+//  var a=mySlice2(a,1,4)
+// console.log(a);
+
+function myFill(array,value,indexValue1,indexValue2)
+{
+    
+    for(i=indexValue1;i<indexValue2;i++)
+    {
+        array[i]=value;
+    }
+    return array;
+}
+var b=myFill(a,100,1,4);
+console.log(b);
+
+
+
+
 
 
 
